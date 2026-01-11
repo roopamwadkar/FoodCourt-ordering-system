@@ -1,0 +1,54 @@
+/* FULL BACKGROUND – NEVER MOVES */
+.home-bg {
+  position: fixed;
+  inset: 0;
+
+  background-image: url("C:\Users\Roopam Wadkar\foodcourt-app\public\bg.img.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* OVERLAY – FIXED SIZE */
+.home-overlay {
+  width: 90%;
+  max-width: 1200px;
+  height: 90vh;
+
+  background: rgba(214, 212, 90, 0.9);
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden; /* 🔑 VERY IMPORTANT */
+}
+
+/* HEADER – NEVER SCROLLS */
+.home-header {
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* CONTENT – ONLY THIS SCROLLS */
+.home-scroll {
+  flex: 1;
+  padding: 20px 30px;
+  overflow-y: auto;
+}
+
+/* UI polish */
+.card {
+  border-radius: 12px;
+}
+
+button {
+  border-radius: 8px;
+}
