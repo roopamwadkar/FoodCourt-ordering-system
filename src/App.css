@@ -13,7 +13,7 @@
   align-items: center;
 }
 
-/* OVERLAY – FIXED SIZE */
+
 .home-overlay {
   width: 90%;
   max-width: 1200px;
@@ -25,10 +25,10 @@
   display: flex;
   flex-direction: column;
 
-  overflow: hidden; /* 🔑 VERY IMPORTANT */
+  overflow: hidden; 
 }
 
-/* HEADER – NEVER SCROLLS */
+
 .home-header {
   padding: 20px 30px;
   display: flex;
@@ -37,14 +37,13 @@
   flex-shrink: 0;
 }
 
-/* CONTENT – ONLY THIS SCROLLS */
+
 .home-scroll {
   flex: 1;
   padding: 20px 30px;
   overflow-y: auto;
 }
 
-/* UI polish */
 .card {
   border-radius: 12px;
 }
